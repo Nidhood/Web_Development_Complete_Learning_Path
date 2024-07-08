@@ -34,8 +34,109 @@ console.log("Non-primitive data types: " + typeof objectExample + ".\n");
 // We can also create variables using the var and const keywords, which means that the variable cannot be reassigned (inmutable).
 const constVariable = "This is a const variable.";
 
+// Now, let's see how JavaScript works with arrays:
+let fruits = ["Apple", "Banana", "Cherry"]; // This is an array, which is a collection of elements.
+console.log(fruits); // ["Apple", "Banana", "Cherry"]
+
+// We can access the elements of an array using the index of the element (starting from 0).
+console.log(fruits[0]); // Apple
+console.log(fruits[1]); // Banana
+console.log(fruits[2]); // Cherry
+
+// Important methods for arrays:
+
+// Length: Returns the number of elements in the array.
+console.log("\nLength: " + fruits.length); // 3
+
+// IndexOf: Returns the index of the first occurrence of a specified element in the array.
+console.log("IndexOf: " + fruits.indexOf("Banana")); // 1
+
+// Includes: Returns true if the array contains a specified element, otherwise false.
+console.log("Includes: " + fruits.includes("Cherry")); // true
+
+// Reverse: Reverses the order of the elements in the array.
+console.log("Reverse: " + fruits.reverse()); // ["Cherry", "Banana", "Apple"]
+
+// Sort: Sorts the elements of the array.
+console.log("Sort: " + fruits.sort()); // ["Apple", "Banana", "Cherry"]
+
+// Fill: Fills all the elements of the array with a specified value.
+console.log("Fill: " + fruits.fill("Date")); // ["Date", "Date", "Date"]
+
+// Filter: Creates a new array with all elements that pass a test (provided as a function).
+let filteredFruits = fruits.filter(fruit => fruit === "Date");
+console.log("Filter: " + filteredFruits); // ["Date"]
+
+// Map: Creates a new array with the results of calling a function for every element in the array.
+let mappedFruits = fruits.map(fruit => fruit + "s");
+console.log("Map: " + mappedFruits); // ["Dates", "Dates", "Dates"]
+
+// Reduce: Reduces the array to a single value (from left-to-right) using a function.
+let reducedFruits = fruits.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log("Reduce: " + reducedFruits); // DatesDatesDates
+
+// Some: Checks if at least one element in the array passes a test (provided as a function).
+let someFruits = fruits.some(fruit => fruit === "Dates");
+console.log("Some: " + someFruits); // true
+
+// Every: Checks if all elements in the array pass a test (provided as a function).
+let everyFruits = fruits.every(fruit => fruit === "Dates");
+console.log("Every: " + everyFruits); // true
+
+// Find: Returns the value of the first element in the array that passes a test (provided as a function).
+let foundFruit = fruits.find(fruit => fruit === "Dates");
+console.log("Find: " + foundFruit); // Dates
+
+// FindIndex: Returns the index of the first element in the array that passes a test (provided as a function).
+let foundIndex = fruits.findIndex(fruit => fruit === "Dates");
+console.log("FindIndex: " + foundIndex); // 0
+
+// Fill: Fills all the elements of the array with a specified value.
+console.log("Fill: " + fruits.fill("Date")); // ["Date", "Date", "Date"]
+
+// CopyWithin: Copies array elements within the array, to and from specified positions.
+console.log("CopyWithin: " + fruits.copyWithin(1, 0, 1)); // ["Date", "Date", "Date"]
+
+// Flat: Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+let nestedFruits = ["Apple", ["Banana", "Cherry"]];
+let flatFruits = nestedFruits.flat();
+console.log("Flat: " + flatFruits); // ["Apple", "Banana", "Cherry"]
+
+// Push: Adds an element to the end of the array.
+fruits.push("Date");
+console.log("Push: " + fruits); // ["Apple", "Banana", "Cherry", "Date
+
+// Pop: Removes the last element from the array.
+fruits.pop();
+console.log("Pop: " + fruits); // ["Apple", "Banana", "Cherry"]
+
+// Shift: Removes the first element from the array.
+fruits.shift();
+console.log("Shift: " + fruits); // ["Banana", "Cherry"]
+
+// Unshift: Adds an element to the beginning of the array.
+fruits.unshift("Apple");
+console.log("Unshift: " + fruits); // ["Apple", "Banana", "Cherry"]
+
+// Slice: Returns a new array with a portion of the original array.
+let slicedFruits = fruits.slice(1, 2); // The first parameter is the starting index, and the second parameter is the ending index (not inclusive).
+console.log("Slice: " + slicedFruits); // ["Banana"]
+
+// Splice: Adds or removes elements from an array.
+fruits.splice(1, 1, "Date");
+console.log("Splice: " + fruits); // ["Apple", "Date", "Cherry"]
+
+// Concat: Concatenates two or more arrays.
+let moreFruits = ["Fig", "Grape"];
+let allFruits = fruits.concat(moreFruits);
+console.log("Concat: " + allFruits); // ["Apple", "Date", "Cherry", "Fig", "Grape"]
+
+// Join: Joins all elements of an array into a string.
+let fruitsString = allFruits.join(", ");
+console.log("Join: " + fruitsString); // Apple, Date, Cherry, Fig, Grape
+
 // Important considerations creating variables (naming conventions):
-console.log("Important considerations creating variables (naming conventions):\n");
+console.log("\nImportant considerations creating variables (naming conventions):\n");
 console.log("1. Variables cannot start with a number.");
 console.log("2. Variables cannot contain spaces.");
 console.log("3. Variables cannot be the same name as a reserved keyword.");

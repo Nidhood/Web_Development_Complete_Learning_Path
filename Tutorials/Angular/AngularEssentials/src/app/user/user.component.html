@@ -1,0 +1,13 @@
+<div>
+
+  <!-- Here we are going to use another Angular property that allow us to bind events to elements in the template, that is called event binding -->
+  <button (click)="onSelectedUser()">
+
+    <!-- Here we are going to use another Angular property that allow us to bind the value of a property to an element in the template, that is called property binding -->
+    <img [src]="imagePath()" [alt]="selectedUser().name"/>
+
+    <!-- Here we are going to use the Angular interpolation syntax to display the user's name (which allow us to display the value of a property in the template) -->
+    <!-- This is the Angular interpolation syntax, which allow us to dynamically display the value of a property in the template -->
+    <span>{{ selectedUser().name }}</span>
+  </button>
+</div>

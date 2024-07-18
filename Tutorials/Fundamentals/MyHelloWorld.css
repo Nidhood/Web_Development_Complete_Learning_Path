@@ -1,0 +1,165 @@
+/* This is style sheet for MyHelloWorld.html */
+
+/* Title style using element selector */
+
+h1 /* -> This is an element selector, which selects the h1 tag or any element with h1 tag */
+{
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6); /* Gradient from blue to purple */
+    -webkit-background-clip: text; /* Applies the gradient only to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent to show the gradient */
+    font-size: 30px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center-aligns the text */
+}
+
+/* Class selector style */
+
+.red-text /* -> This is a class selector, which selects any element with the class "red-text". */
+{
+    color: red; /* Sets the text color to red */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center-aligns the text */
+}
+
+/* ID selector style */
+
+#banner /* -> This is an ID selector, which selects the element with the id "banner". */
+{
+    background: blueviolet; /* Sets the background color to blueviolet */
+    padding: 20px; /* Adds padding around the element */
+    text-align: center; /* Center-aligns the text */
+}
+
+/* Attribute selector style */
+
+div[dogde-text="such"] /* -> This is an attribute selector, which selects any div element with the attribute dogde-text set to "such". */
+{
+    color: green; /* Sets the text color to green */
+    font-size: 18px; /* Font size */
+    font-style: italic; /* Italic text */
+}
+
+/* Descendant selector style */
+
+div p /* -> This is a descendant selector, which selects all p elements inside div elements. */
+{
+    color: blue; /* Sets the text color to blue */
+    font-size: 16px; /* Font size */
+}
+
+/* Child selector style */
+
+ul > li /* -> This is a child selector, which selects all li elements that are direct children of ul elements. */
+{
+    list-style-type: square; /* Sets the list item marker to a square */
+}
+
+/* Adjacent sibling selector style */
+
+h2 + p /* -> This is an adjacent sibling selector, which selects the p element that immediately follows an h2 element. */
+{
+    color: grey; /* Sets the text color to grey */
+}
+
+/* General sibling selector style */
+
+h2 ~ p /* -> This is a general sibling selector, which selects all p elements that are siblings of an h2 element. */
+{
+    color: orange; /* Sets the text color to orange */
+}
+
+/* Universal selector style */
+
+* /* -> This is a universal selector, which selects all elements. */
+{
+    box-sizing: border-box; /* Sets the box-sizing property to border-box for all elements */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Grouping selector style */
+
+/* Grouping selector style */
+h1, h2, h3 /* -> This is a grouping selector, which selects all h1, h2, and h3 elements. */
+{
+    font-family: 'Arial', sans-serif; /* Sets the font family to Arial for all selected elements */
+}
+
+/* Container spacing example */
+.container /* -> This is a class selector to demonstrate container spacing using margin and padding. */
+{
+    margin: 20px; /* Adds margin outside the container */
+    padding: 20px; /* Adds padding inside the container */
+    border: 1px solid black; /* Adds a border to the container */
+}
+
+/* Box layout example */
+.box-layout /* -> This is a class selector to demonstrate box layout. */
+{
+    width: 200px; /* Sets the width of the box */
+    height: 100px; /* Sets the height of the box */
+    margin: 20px; /* Adds margin outside the box */
+    padding: 10px; /* Adds padding inside the box */
+    border: 2px solid #000; /* Adds a border to the box */
+    background-color: lightblue; /* Sets the background color of the box */
+}
+
+/* Inline layout example */
+.inline-layout /* -> This is a class selector to demonstrate inline layout. */
+{
+    margin: 20px; /* Adds margin outside the container */
+    padding: 10px; /* Adds padding inside the container */
+    border: 1px solid #000; /* Adds a border to the container */
+    background-color: lightgreen; /* Sets the background color of the container */
+}
+
+.inline-layout span /* -> This is a descendant selector to style span elements inside inline-layout. */
+{
+    display: inline-block; /* Sets the display property to inline-block */
+    margin: 5px; /* Adds margin outside the inline element */
+    padding: 5px; /* Adds padding inside the inline element */
+    border: 1px solid #000; /* Adds a border to the inline element */
+    background-color: lightcoral; /* Sets the background color of the inline element */
+}
+
+/* Flexbox layout example */
+.flex-container /* -> This is a class selector to demonstrate flexbox layout. */
+{
+    display: flex; /* Sets the display property to flex */
+    justify-content: space-around; /* Distributes space around the flex items */
+    align-items: center; /* Aligns items to the center of the container */
+    margin: 20px; /* Adds margin outside the flex container */
+    padding: 10px; /* Adds padding inside the flex container */
+    border: 1px solid #000; /* Adds a border to the flex container */
+    background-color: lightyellow; /* Sets the background color of the flex container */
+}
+
+.flex-item /* -> This is a class selector to style flex items inside flex-container. */
+{
+    margin: 5px; /* Adds margin outside the flex item */
+    padding: 20px; /* Adds padding inside the flex item */
+    border: 1px solid #000; /* Adds a border to the flex item */
+    background-color: lightblue; /* Sets the background color of the flex item */
+    flex: 1; /* Sets the flex-grow property to 1 */
+}
+
+/* Grid layout example */
+.grid-container /* -> This is a class selector to demonstrate grid layout. */
+{
+    display: grid; /* Sets the display property to grid */
+    grid-template-columns: repeat(3, 1fr); /* Defines three equal-width columns */
+    gap: 10px; /* Sets the gap between grid items */
+    margin: 20px; /* Adds margin outside the grid container */
+    padding: 10px; /* Adds padding inside the grid container */
+    border: 1px solid #000; /* Adds a border to the grid container */
+    background-color: lightgrey; /* Sets the background color of the grid container */
+}
+
+.grid-item /* -> This is a class selector to style grid items inside grid-container. */
+{
+    padding: 20px; /* Adds padding inside the grid item */
+    border: 1px solid #000; /* Adds a border to the grid item */
+    background-color: lightpink; /* Sets the background color of the grid item */
+    text-align: center; /* Center-aligns the text */
+}

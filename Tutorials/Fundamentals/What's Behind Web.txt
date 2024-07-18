@@ -1,0 +1,30 @@
+In the new version of HTML (1.1), we have the following changes:
+
+- Opens a connection with the server.
+- Sends multiple requests to the server, and waits for the response.
+- Closes the connection with the server.
+
+
+What are th MIME types?
+
+-> It is a standard that indicates specific types of files.
+-> It is used to indicate the type of file that is being sent to the browser.
+-> The MIME type is sent in the header of the HTTP response.
+
+Some examples of MIME types are:
+
+-> text/html, text/plain, text/css, text/javascript, image/jpeg, image/png, image/gif, application/pdf, application/zip, application/json, application/xml, application/javascript, application/octet-stream, audio/mpeg, video/mp4, video/ogg, video/webm, etc.
+
+Why, HTML to use the MIME types?
+
+-> HTML is entirely based on the text format, so it is necessary to use the MIME types to indicate the type of file that is being sent to the browser.
+
+What is HTML?
+
+-> HTML (Hypertext Markup Language) is a standard markup language used to create web pages.
+
+What is DOM?
+
+-> The Document Object Model (DOM) is a programming interface for HTML and XML documents.
+-> It represents the structure of the document as a tree of nodes.
+-> Each node in the tree represents an element, attribute, or text in the document.

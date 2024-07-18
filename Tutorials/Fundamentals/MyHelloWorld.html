@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basics of HTML -->
+
+<!-- The 'head' box is used to store the metadata of the page -->
+<!-- The metadata is the data that is not shown in the page, but is used to give information about the page -->
+<head>
+
+    <!-- The 'meta' box is used to store the metadata of the page -->
+    <!-- The 'charset' attribute is used to define the character encoding of the page -->
+    <!-- The 'UTF-8' value is used to define the character encoding of the page as Unicode, which is a standard for encoding characters -->
+    <meta charset="UTF-8">
+
+    <!-- The 'title' box is used to store the title of the page, which is shown in the browser tab -->
+    <title>Mi primera página</title>
+
+    <!-- The 'base' box is used to store the base URL of the page -->
+    <!-- The 'link' box is used to store a link to an external resource -->
+
+    <!-- The 'style' box is used to store the style of the page -->
+
+    <!--
+    <style type="text/css">
+        h1 {
+            color: red;
+            font-family: "Apple Braille",sans-serif;
+
+        }
+        p {
+            color: blue;
+            font-weight: bold;
+            font-family: "Apple Braille",sans-serif;
+        }
+
+        a {
+            color: green;
+            font-family: "Apple Braille",sans-serif;
+        }
+    </style>
+
+    -->
+
+    <!-- Now we are going to use 'link' to link an external CSS file -->
+    <!-- The 'rel' attribute is used to define the relationship between the current document and the linked document -->
+    <!-- The 'stylesheet' value is used to define the relationship between the current document and the linked document as a stylesheet -->
+    <!-- The 'href' attribute is used to define the URL of the linked document -->
+    <link rel="stylesheet" type="text/css" href="MyHelloWorld.css">
+</head>
+
+<!-- The 'body' box is used to store the content of the page -->
+<body>
+
+    <!-- The first element is the Title of the page -->
+    <!-- The 'h<1...4>' box allow us to create a titles in different sizes -->
+    <h1>¡Hola Mundo!</h1>
+    <h2>¡Hola Mundo!</h2>
+    <h3>¡Hola Mundo!</h3>
+    <h4>¡Hola Mundo!</h4>
+
+    <!-- The 'p' box is used to store a paragraph of text -->
+    <p>Esta es mi primera página web.</p>
+
+    <!-- The 'a' box is used to store a link -->
+    <!-- The 'href' attribute is used to define the URL of the link -->
+    <a href="https://www.google.com">¡Haz clic aquí para ir a Google!</a>
+
+    <!-- The 'img' box is used to store an image -->
+    <!-- The 'src' attribute is used to define the URL of the image -->
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+
+    <!-- The 'ul' box is used to store an unordered list -->
+    <ul>
+        <!-- The 'li' box is used to store a list item -->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <!-- The 'ol' box is used to store an ordered list -->
+    <ol>
+        <!-- The 'li' box is used to store a list item -->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <!-- The 'dl' box is used to store a description list -->
+    <dl>
+        <!-- The 'dt' box is used to store a term in the description list -->
+        <dt>Termino 1</dt>
+        <!-- The 'dd' box is used to store a description in the description list -->
+        <dd>Descripción 1</dd>
+        <!-- The 'dt' box is used to store a term in the description list -->
+        <dt>Termino 2</dt>
+        <!-- The 'dd' box is used to store a description in the description list -->
+        <dd>Descripción 2</dd>
+    </dl>
+
+    <!-- The 'div' box is used to store a division of the page -->
+    <div class="red-text">
+        <!-- The 'p' box is used to store a paragraph of text -->
+        <p>Este es un párrafo dentro de un 'div'.</p>
+    </div>
+
+    <!-- The 'span' box is used to store a span of text -->
+    <span>Este es un texto dentro de un 'span'.</span>
+
+    <!-- The 'strong' box is used to store a strong text -->
+    <strong>Este es un texto fuerte.</strong>
+
+
+    <!-- The 'em' box is used to store an emphasized text -->
+    <em>Este es un texto enfatizado.</em>
+
+    <!-- The 'i' box is used to store an italic text -->
+    <i>Este es un texto en itálica.</i>
+
+    <!-- The 'b' box is used to store a bold text -->
+    <b>Este es un texto en negrita.</b>
+
+    <!-- The 'u' box is used to store an underlined text -->
+    <u>Este es un texto subrayado.</u>
+
+    <!-- The 'br' box is used to store a line break -->
+    <br>
+    <br>
+
+    <!-- The 'table' box is used to store a table -->
+    <table border="1">
+        <!-- The 'tr' box is used to store a table row -->
+        <tr>
+            <!-- The 'th' box is used to store a table header -->
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <!-- The 'tr' box is used to store a table row -->
+        <tr>
+            <!-- The 'td' box is used to store a table data -->
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+        </tr>
+        <!-- The 'tr' box is used to store a table row -->
+        <tr>
+            <!-- The 'td' box is used to store a table data -->
+            <td>Dato 4</td>
+            <td>Dato 5</td>
+            <td>Dato 6</td>
+        </tr>
+    </table>
+
+    <!-- The 'form' box is used to store a form -->
+    <!-- The 'action' attribute is used to define the URL of the form -->
+    <form action="https://www.google.com">
+        <!-- The 'input' box is used to store an input field -->
+        <!-- The 'type' attribute is used to define the type of the input field -->
+        <!-- The 'text' value is used to define the type of the input field as text -->
+        <!-- The 'name' attribute is used to define the name of the input field -->
+        <input type="text" name="nombre">
+        <!-- The 'input' box is used to store an input field -->
+        <!-- The 'type' attribute is used to define the type of the input field -->
+        <!-- The 'submit' value is used to define the type of the input field as submit -->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- The 'video' box is used to store a video -->
+    <!-- The 'src' attribute is used to define the URL of the video -->
+    <video src="video.mp4" controls></video>
+
+    !-- Element selector example -->
+    <h1>¡Hola Mundo! (Element Selector)</h1>
+
+    <!-- Class selector example -->
+    <div class="red-text">
+        <p>This text is styled using a class selector.</p>
+    </div>
+
+    <!-- ID selector example -->
+    <div id="banner">
+        <p>This div is styled using an ID selector.</p>
+    </div>
+
+    <!-- Attribute selector example -->
+    <div dogde-text="such">
+        <p>This div is styled using an attribute selector.</p>
+    </div>
+
+    <!-- Descendant selector example -->
+    <div>
+        <p>This paragraph is styled using a descendant selector.</p>
+    </div>
+
+    <!-- Child selector example -->
+    <ul>
+        <li>This list item is styled using a child selector.</li>
+        <li>This list item is styled using a child selector.</li>
+    </ul>
+
+    <!-- Adjacent sibling selector example -->
+    <h2>Heading 2</h2>
+    <p>This paragraph is styled using an adjacent sibling selector.</p>
+
+    <!-- General sibling selector example -->
+    <h2>Heading 2</h2>
+    <p>This paragraph is styled using a general sibling selector.</p>
+
+    <!-- Universal selector example -->
+    <div>
+        <p>This paragraph is styled using a universal selector.</p>
+    </div>
+
+    <!-- Grouping selector example -->
+    <h1>Heading 1 (Grouping Selector)</h1>
+    <h2>Heading 2 (Grouping Selector)</h2>
+    <h3>Heading 3 (Grouping Selector)</h3>
+
+    <!-- Container spacing example -->
+    <div class="container">
+        <p>This div is styled with margin and padding to demonstrate container spacing.</p>
+    </div>
+
+    <!-- Box layout example -->
+    <div class="box-layout">
+        <p>Box layout example.</p>
+    </div>
+
+    <!-- Inline layout example -->
+    <div class="inline-layout">
+        <span>Inline layout example 1.</span>
+        <span>Inline layout example 2.</span>
+    </div>
+
+    <!-- Flexbox layout example -->
+    <div class="flex-container">
+        <div class="flex-item">Flex item 1</div>
+        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item">Flex item 3</div>
+    </div>
+
+    <!-- Grid layout example -->
+    <div class="grid-container">
+        <div class="grid-item">Grid item 1</div>
+        <div class="grid-item">Grid item 2</div>
+        <div class="grid-item">Grid item 3</div>
+        <div class="grid-item">Grid item 4</div>
+        <div class="grid-item">Grid item 5</div>
+        <div class="grid-item">Grid item 6</div>
+    </div>
+
+</body>
+</html>

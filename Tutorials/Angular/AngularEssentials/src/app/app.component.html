@@ -4,10 +4,55 @@
 
 <main>
   <ul id="users">
+
+    <!--
     <li>
-      <app-user/>
+
+      // Here we are going to use the Angular property binding to bind the value of the users array to the app-flex-user component
+      // Angular features provides to us an interesting way to obtain the value of the selected user, that is called event binding, where we using the '$event' object to get the value of the selected user
+      <app-flex-user [user]="users[0]" (select)="onSelectedUser($event)"/>
+
     </li>
+
+    <li>
+      <app-flex-user [user]="users[1]" (select)="onSelectedUser($event)" />
+    </li>
+
+    <li>
+      <app-flex-user [user]="users[2]" (select)="onSelectedUser($event)" />
+    </li>
+
+    <li>
+      <app-flex-user [user]="users[3]" (select)="onSelectedUser($event)" />
+    </li>
+
+    -->
+
+    <!-- It works, but it's not the best way to do it, because we are repeating the same code over and over again. So the question is, Angular provides a way to avoid this repetition? Or, Angular have a way to make this code more dynamic? -->
+    <!-- The answer is yes, Angular provides a way to avoid this repetition, and make this code more dynamic, and this way is called 'ngFor' directive -->
+    @for (user of users; track user.id) {
+
+      <!-- Why we are using the 'track' directive? -->
+      <!-- The 'track' directive is used to improve the performance of the application, because it allows Angular to track the changes of the elements in the list, and only update the elements that have changed, instead of updating all the elements in the list -->
+      <!-- Otherwise, if we don't use the 'track' directive, Angular will update all the elements in the list, even if they haven't changed, which can cause performance issues in the application and explicitly an error called 'ExpressionChangedAfterItHasBeenCheckedError' -->
+      <li>
+        <app-flex-user [user]="user" (select)="onSelectedUser($event)" />
+      </li>
+    }
   </ul>
 
+  <!-- Another important Angular directive is the 'ngIf' directive, which allows us to conditionally display elements in the template -->
+  @if (selectedUser) {
+    <!-- Now, here we are using the '?' operator to avoid the error when the selectedUser is null, which means that the '?' JavaScript operator is used to avoid the error when the selectedUser is null -->
+    <!-- <app-tasks [name]="selectedUser?.name" /> -->
+
+    <!-- Now, we are going to use the 'ngIf' directive to conditionally display the app-tasks component, which means that the app-tasks component will only be displayed if the selectedUser is not null -->
+    <app-tasks [name]="selectedUser.name" />
+  } @else {
+    <p id="fallback">Select a user to see their tasks!</p>
+  }
+
 </main>
+
+
 

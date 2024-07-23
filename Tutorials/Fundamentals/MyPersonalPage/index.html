@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
 
     <!-- Google Fonts -->
-    <!-- "preconnect" is used to tell the browser to start establishing a connection to the server before the browser knows where it will be used -->
+    <!-- "preconnect" is used to tell the browser to start establishing a connection to the server before the browser know  s where it will be used -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -134,7 +134,114 @@
                 </ul>
             </div>
         </aside>
+
+        <div class="main-content">
+
+            <!-- "nav" is used to define navigation links, in this case, the navigation links are used to navigate through the document -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Bienvenida</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Datos biográficos</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Hoja de vida</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Material de interés</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- "article" is used to define self-contained content, like a blog post or a comment -->
+            <article class="welcome" data-page="welcome">
+                <header>
+                    <h2 class="h2 article-title">Bienvenida</h2>
+                </header>
+
+                <!-- "section" is used to define sections in a document -->
+                <section class="article-content">
+                    <p class="article-text">
+                        ¡Hola! Soy Ivan Orozco, un desarrollador web apasionado por la tecnología y la programación. Me encanta
+                        aprender cosas nuevas y compartir mis conocimientos con los demás. En este sitio web, podrás encontrar
+                        información sobre mí, mi experiencia laboral, proyectos en los que he trabajado y mucho más. ¡Espero que
+                        disfrutes tu visita!
+                    </p>
+
+                    <p>
+                        Yo me destaco por ser una persona muy responsable, comprometida y apasionada por lo que hago. Me encanta
+                        aprender cosas nuevas y enfrentar nuevos retos. Siempre estoy en constante aprendizaje y busco mejorar
+                        mis habilidades cada día. Me considero una persona proactiva, creativa y con una gran capacidad de
+                        resolución de problemas. Me gusta trabajar en equipo y colaborar con los demás para lograr los objetivos
+                        propuestos. Soy una persona muy organizada, con una gran capacidad de planificación y gestión del tiempo.
+                        Me gusta trabajar en entornos dinámicos y cambiantes, donde pueda aportar mi conocimiento y experiencia
+                        para lograr los resultados esperados.
+                    </p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">¿Qué es lo que hago?</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Desarrollo Web</h4>
+                                <p class="service-item-text">
+                                    Desarrollo de aplicaciones web y sitios web responsivos, utilizando tecnologías como HTML, CSS,
+                                    JavaScript, React, Angular, Node.js, Express, MongoDB, MySQL, entre otras.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Apps Móviles</h4>
+                                <p class="service-item-text">
+                                    Desarrollo de aplicaciones móviles para Android e iOS, utilizando tecnologías como React Native,
+                                    Flutter, Java, Kotlin, Swift, entre otras.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Diseño de drones</h4>
+                                <p class="service-item-text">
+                                    Diseño y construcción de drones para diferentes aplicaciones, como fotografía aérea, vigilancia,
+                                    agricultura de precisión, entre otras.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">IA y Machine Learning</h4>
+                                <p class="service-item-text">
+                                    Desarrollo de sistemas de inteligencia artificial y machine learning para diferentes aplicaciones,
+                                    como reconocimiento de voz, reconocimiento facial, análisis de datos, entre otros.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
     </main>
 </body>
-
 </html>

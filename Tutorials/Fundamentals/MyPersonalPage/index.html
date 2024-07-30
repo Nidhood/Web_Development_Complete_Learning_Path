@@ -1,247 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta name="application-name" content="My Personal Page" />
+    <meta name="author" content="Ivan Orozco" />
+    <meta name="description" content="Sitio web personal de Ivan Orozco" />
+    <meta name="keywords" content="Ivan Orozco, Desarrollador Web, Programador" />
 
-    <!-- "http-equiv" is used to simulate an HTTP header, in this case, the "X-UA-Compatible" header is used to tell the browser to use the latest version of the rendering engine -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Not guardar en el navegador -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
-    <!-- name="viewport" is used to tell the browser to adjust the width of the page to the width of the device -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!-- Permitir indexar la página -->
+    <meta name="robots" content="index, follow">
 
-    <!-- "title" is used to set the title of the document -->
+    <!-- Permitir abrir los enlaces de una página -->
+    <meta name="referrer" content="no-referrer">
+
     <title>Ivan Orozco</title>
-
-    <!-- "link" is used to link the document to an external resource, in this case, the external resource is a CSS file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- "rel" is used to tell the browser the relationship between the current document and the linked document -->
-    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
-
-    <!-- Google Fonts -->
-    <!-- "preconnect" is used to tell the browser to start establishing a connection to the server before the browser know  s where it will be used -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-
-    <!-- "main" is used to define the main content of the document -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"/>
+  </head>
+  <body>
     <main>
+      <div class="main-content">
+        <ul class="navbar">
+          <li>
+            <a href="./pages/welcome.html" class="navbar-link">Bienvenida</a>
+          </li>
 
-        <!-- "aside" is used to define content aside from the content (like a sidebar) -->
-        <!-- "data-sidebar" is used to define the sidebar, which is used to show the user information -->
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
+          <li>
+            <a href="./pages/biographical-data.html" class="navbar-link">Datos biográficos</a>
+          </li>
 
-                <!-- "figure" is used to define self-contained content, like illustrations, diagrams, photos, code listings, etc. -->
-                <figure class="avatar-box">
-                    <img src="./assets/images/avatar.png" alt="Scientific" width="80" />
-                </figure>
+          <li>
+            <a href="./pages/resume.html" class="navbar-link">Hoja de vida</a>
+          </li>
 
-                    <div class="info-content">
-                        <h1 class="name" title="Ivan Orozco">Ivan Orozco</h1>
-                        <p class="title">Desarrollador Web</p>
-                    </div>
-
-                    <button class="info_more-btn" data-info-more-btn>
-                        <span>Mostrar contactos</span>
-
-                        <!-- "ion-icon" is used to add icons to the document -->
-                        <ion-icon name="chevron-down"></ion-icon>
-                    </button>
-            </div>
-
-            <div class="sidebar-info-more">
-
-                <div class="separator"></div>
-                <ul class="contacts-lists">
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-
-                            <!-- The "mailto" attribute is used to create a hyperlink that opens the user's email program -->
-                            <a href="mailto:ivan.oroz34@gmail.com" class="contact-link">ivan.oroz34@gmail.com</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p>
-
-                            <!-- The "tel" attribute is used to create a hyperlink that opens the user's phone program -->
-                            <a href="tel:+601573156395755" class="contact-link">+57 (601) 315-6395755</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Fecha de nacimiento</p>
-
-                            <!-- "datetime" attribute is used to define the date and time of the element, with the format "YYYY-MM-DD" -->
-                            <time datetime="2002-06-23">Junio 23 del 2002</time>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Ubicación</p>
-
-                            <!-- "datetime" attribute is used to define the date and time of the element, with the format "YYYY-MM-DD" -->
-                            <address>Bogotá D.C., Cundinamarca, Colombia</address>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="separator"></div>
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="https://www.facebook.com/IvanDarioOrozcoIbanez" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="https://www.instagram.com/ivan_oro34/" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="https://www.instagram.com/ivan_oro34/" class="social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
-        <div class="main-content">
-
-            <!-- "nav" is used to define navigation links, in this case, the navigation links are used to navigate through the document -->
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Bienvenida</button>
-                    </li>
-
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Datos biográficos</button>
-                    </li>
-
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Hoja de vida</button>
-                    </li>
-
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Material de interés</button>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- "article" is used to define self-contained content, like a blog post or a comment -->
-            <article class="welcome" data-page="welcome">
-                <header>
-                    <h2 class="h2 article-title">Bienvenida</h2>
-                </header>
-
-                <!-- "section" is used to define sections in a document -->
-                <section class="article-content">
-                    <p class="article-text">
-                        ¡Hola! Soy Ivan Orozco, un desarrollador web apasionado por la tecnología y la programación. Me encanta
-                        aprender cosas nuevas y compartir mis conocimientos con los demás. En este sitio web, podrás encontrar
-                        información sobre mí, mi experiencia laboral, proyectos en los que he trabajado y mucho más. ¡Espero que
-                        disfrutes tu visita!
-                    </p>
-
-                    <p>
-                        Yo me destaco por ser una persona muy responsable, comprometida y apasionada por lo que hago. Me encanta
-                        aprender cosas nuevas y enfrentar nuevos retos. Siempre estoy en constante aprendizaje y busco mejorar
-                        mis habilidades cada día. Me considero una persona proactiva, creativa y con una gran capacidad de
-                        resolución de problemas. Me gusta trabajar en equipo y colaborar con los demás para lograr los objetivos
-                        propuestos. Soy una persona muy organizada, con una gran capacidad de planificación y gestión del tiempo.
-                        Me gusta trabajar en entornos dinámicos y cambiantes, donde pueda aportar mi conocimiento y experiencia
-                        para lograr los resultados esperados.
-                    </p>
-                </section>
-
-                <section class="service">
-                    <h3 class="h3 service-title">¿Qué es lo que hago?</h3>
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                            </div>
-
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Desarrollo Web</h4>
-                                <p class="service-item-text">
-                                    Desarrollo de aplicaciones web y sitios web responsivos, utilizando tecnologías como HTML, CSS,
-                                    JavaScript, React, Angular, Node.js, Express, MongoDB, MySQL, entre otras.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                            </div>
-
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Apps Móviles</h4>
-                                <p class="service-item-text">
-                                    Desarrollo de aplicaciones móviles para Android e iOS, utilizando tecnologías como React Native,
-                                    Flutter, Java, Kotlin, Swift, entre otras.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                            </div>
-
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Diseño de drones</h4>
-                                <p class="service-item-text">
-                                    Diseño y construcción de drones para diferentes aplicaciones, como fotografía aérea, vigilancia,
-                                    agricultura de precisión, entre otras.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                            </div>
-
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">IA y Machine Learning</h4>
-                                <p class="service-item-text">
-                                    Desarrollo de sistemas de inteligencia artificial y machine learning para diferentes aplicaciones,
-                                    como reconocimiento de voz, reconocimiento facial, análisis de datos, entre otros.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article>
-        </div>
+          <li>
+            <a href="./pages/interest-material.html" class="navbar-link">Material de interés</a>
+          </li>
+        </ul>
+      </div>
     </main>
-</body>
+  </body>
 </html>

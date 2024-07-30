@@ -1,0 +1,194 @@
+Que es una Start Up?
+
+-> Una Start Up es una empresa emergente que busca un modelo de negocio escalable y repetible,
+   es decir, que pueda crecer rápidamente y que pueda ser replicado en diferentes mercados.
+
+-> Tambien se caracteriza por tener un alto grado de incertidumbre, ya que no se sabe si el modelo de negocio
+   que se ha planteado va a funcionar o no. Y de rapido crecimiento, ya que se busca crecer lo mas rapido posible.
+
+-> Una Start Up debe cazarse con un flujo de pagos.
+
+-> David Perez (NU), digitalizo la banca en latinoamerica, y se convirtio en el primer unicornio de latinoamerica.
+
+
+Que no es una Start Up?
+
+-> Una tienda de ropa, una tienda de abarrotes, una tienda de zapatos, etc. No son Start Ups, ya que no buscan
+   un modelo de negocio escalable y repetible, sino que buscan un modelo de negocio estable y seguro.
+
+-> Aun cuando los dos mercados son muy diferentes, el mercado de Start Ups y el mercado tradicional, ambos
+   buscan lo mismo, que es vender un producto o servicio a un cliente, y que este cliente este satisfecho con
+   el producto o servicio que ha adquirido.
+
+-> Los aspectos mas importantes que diferencian un StartUp de una empresa tradicional, es la tecnologia y la escalabilidad.
+
+Diferencia de una applicacion onpremise y una applicacion oncloud?
+
+-> Una applicacion onpremise es una applicacion que se instala en un servidor local, es decir, en un servidor
+   que esta dentro de la empresa.
+
+-> Una applicacion oncloud es una applicacion que se instala en un servidor remoto, es decir, en un servidor.
+
+Que es una POS?
+
+-> POS (Point of Sale) es un sistema que se utiliza para realizar transacciones de venta, es decir, para
+   cobrar a los clientes por los productos o servicios que han adquirido.
+
+-> Un POS puede ser una maquina fisica, como una caja registradora, o una applicacion, como una applicacion.
+
+Cuales son las diferentes logicas de negocio que existen para software?
+
+-> SaaS (Software as a Service) es un modelo de negocio en el que el software se vende como un servicio, es decir,
+   como un servicio que se paga mensualmente o anualmente.
+
+-> PaaS (Platform as a Service) es un modelo de negocio en el que se vende una plataforma como un servicio, es decir,
+   como un servicio que se paga mensualmente o anualmente.
+
+-> IaaS (Infrastructure as a Service) es un modelo de negocio en el que se vende una infraestructura como un servicio,
+   es decir, como un servicio que se paga mensualmente o anualmente.
+
+-> BaaS (Backend as a Service) es un modelo de negocio en el que se vende un backend como un servicio, es decir,
+   como un servicio que se paga mensualmente o anualmente.
+
+-> FaaS (Function as a Service) es un modelo de negocio en el que se vende una funcion como un servicio, es decir,
+   como un servicio que se paga mensualmente o anualmente.
+
+-> DaaS (Data as a Service) es un modelo de negocio en el que se vende una base de datos como un servicio, es decir,
+   como un servicio que se paga mensualmente o anualmente.
+
+Que es ICP?
+
+-> ICP (Ideal Customer Profile) es el perfil del cliente ideal, es decir, es el perfil del cliente que mas
+   beneficios le va a traer a la empresa.
+
+-> Preguntas como:
+
+    - Quien es tu cliente ideal?
+    - Que edad tiene?
+    - Que genero tiene?
+    - Que nivel de ingresos tiene?
+    - Que nivel de educacion tiene?
+    - Que intereses tiene?
+    - Que problemas tiene?
+    - Que soluciones busca?
+    - Que canales de comunicacion utiliza?
+    - Que productos o servicios consume?
+    - Que productos o servicios no consume?
+
+Que es CRM?
+
+-> CRM (Customer Relationship Management) es un sistema que se utiliza para gestionar la relacion con los clientes,
+   es decir, para gestionar la relacion con los clientes de la empresa.
+
+Que es Customer Journey?
+
+-> Customer Journey es el viaje que realiza un cliente desde que conoce la empresa hasta que se convierte en
+   un cliente fiel.
+
+-> Un ejemplo puede ser el proceso de rappi:
+    1. El cliente conoce la empresa a traves de un anuncio en internet.
+    2. El cliente descarga la applicacion de la empresa.
+    3. El cliente realiza un pedido a traves de la applicacion de la empresa.
+    4. El cliente recibe el pedido en su domicilio.
+
+Como se escala un negocio?
+
+-> Una startup puede ser escalable debido a que su propuesta de valor esa basada en tecnologia y por ende su
+   crecimiento no depende sustancialmente del numero de trabajadores o activos fisicos.
+
+-> Un ejemplo de escalabilidad.
+
+Que es Mafia de los StartUps?
+
+-> La Mafia de los StartUps es un grupo de personas que han trabajado juntas en una empresa emergente y que
+   han tenido exito en ella.
+
+-> Tambien hace referencia a un grupo de ex empleados que han trabajado en una startup tecnologica de gran exito,
+   luego han fundado sus propias empresas y han tenido exito en ellas.
+
+Que es un exit?
+
+-> Un exit es la venta de una empresa emergente a otra empresa, ya sea a traves de una fusion o de una adquisicion.
+   Es decir, empezar cotizar en la bolsa de valores.
+
+Que es equity?
+
+-> Equity es la participacion en una empresa, es decir, es la propiedad de una empresa en terminos de acciones o
+   participaciones.
+
+Porque se invierte en una empresa?
+
+-> Por el equipo fundador.
+
+Que es Go-To-Market?
+
+-> Go-To-Market es el proceso de llevar un producto o servicio al mercado, es decir, de lanzar un producto o servicio
+   al mercado y de venderlo a los clientes.
+
+-> Ya tengo un producto minimamente viable, es decir, aceptado por el mercado. Entonces, se debe de hacer un Go-To-Market.
+
+Que  es Product Market FeedBack?
+
+-> Product Market FeedBack es la retroalimentacion que se recibe de los clientes sobre un producto o servicio, es decir,
+   es la informacion que se recibe de los clientes sobre un producto o servicio y que se utiliza para mejorar el producto
+   o servicio.
+
+Que es la traccion?
+
+-> La traccion empresarial es el crecimiento de la empresa, es decir, es el crecimiento de la empresa en terminos de
+   ingresos, clientes, empleados, etc.
+
+Que es lean StartTup?
+
+-> Lean StartUp es una metodologia de desarrollo de productos y servicios que se basa en la experimentacion y en el
+   aprendizaje rapido.
+
+-> La metodologia es:
+
+    1. Learn: Aprender.
+    2. Build: Construir.
+    3. Measure: Medir.
+
+-> Videos del quiz:
+
+-> COMO simon barrero creo una empresa de 1 billon de dolares.
+-> Miguel Mc Allister | Salir a la bolsa.
+
+    * Cuando uno nace emprededor, la empresa es muy grande la empresa puede salir a la  bolas de valores.
+    * Esto significa que la empresa puede vender acciones en la bolsa de valores y que los inversores pueden
+      comprar acciones de la empresa.
+
+
+1. Problema y porque es problema de nosostros (Un problema que hayamos visto con nustros ojos).
+    * Problema: La desinformacion al momento de ir a hacer preguntas medicas.
+
+2. Solucion.
+    * Solucion: Una applicacion que permita a los usuarios hacer preguntas medicas a medicos certificados y
+      recibir respuestas en tiempo real.
+
+3. Nombre de la StartUp.
+    * Nombre: HealthCloud
+
+4. Slogan.
+    * Slogan: Tu salud en la palma de tus manos.
+
+5. Roles.
+    * CEO: David.
+    * CTO: Ivan.
+    * CMO: Amelie.
+    * CCO: Karo.
+
+6. Producto.
+    * Producto: Una applicacion que permita a los usuarios hacer preguntas medicas a medicos certificados y
+      recibir respuestas en tiempo real.
+
+7. Competencia:
+    * Competencia: Doctoralia, 1doc3.
+
+8. Propuesta de valor.
+    * Propuesta de valor: HealthCloud es una applicacion que permite a los usuarios hacer preguntas medicas a
+      medicos certificados y recibir respuestas en tiempo real.
+
+9. Como hacer plata.
+    * Como hacer plata: HealthCloud va a cobrar a los usuarios por hacer preguntas medicas a medicos certificados
+      y recibir respuestas en tiempo real.

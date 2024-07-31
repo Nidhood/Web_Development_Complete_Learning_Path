@@ -7,19 +7,18 @@
     <meta name="description" content="Sitio web personal de Ivan Orozco" />
     <meta name="keywords" content="Ivan Orozco, Desarrollador Web, Programador" />
 
-    <!-- Not guardar en el navegador -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+      <!-- No guardar en el navegador -->
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
-    <!-- Permitir indexar la página -->
-    <meta name="robots" content="index, follow">
+      <!-- Permitir indexar la página -->
+      <meta name="robots" content="index">
 
-    <!-- Permitir abrir los enlaces de una página -->
-    <meta name="referrer" content="no-referrer">
+      <!-- Permitir abrir los enlaces de una página -->
+      <meta name="robots" content="follow">
 
     <title>Hoja de vida</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="script" href="../assets/js/script.js" />
     <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon"/>
   </head>
 
@@ -45,34 +44,37 @@
         </ul>
       </div>
       <div class="separator"></div>
+    </main>
 
-      <article>
+      <article class="article-resume">
         <header>
           <h2>Hoja de vida</h2>
         </header>
 
         <!-- Índice -->
-        <ol>
-            <li><a href="#formacion-academica">Formación académica</a></li>
-            <ol type="a">
+        <ol class="navbar-resume">
+            <li><a href="#formacion-academica" class="navbar-resume-link">Formación académica</a></li>
+            <ol type="a" class="subsection-navbar-resume">
                 <li><a href="#educacion-primaria">Educación Primaria</a></li>
-                <li><a href="#educacion-secundaria">Educación Secundaria</a></li>
-                <li><a href="#educacion-media">Educación Media</a></li>
+                <li><a href="#educacion-primaria-2">Educación Secundaria</a></li>
+                <li><a href="#educacion-secundaria">Educación Media</a></li>
+                <li><a href="#educacion-secundaria-2">Educación Media</a></li>
                 <li><a href="#educacion-superior">Educación Superior</a></li>
             </ol>
             <li><a href="#cursos-udemy">Cursos en Udemy</a></li>
-            <ol type="a">
+            <ol type="a" class="subsection-navbar-resume">
                 <li><a href="#curso-1">The Complete Python Bootcamp From Zero to Hero in Python</a></li>
                 <li><a href="#curso-2">Python for Machine Learning & Data Science Masterclass</a></li>
                 <li><a href="#curso-3">NLP - Natural Language Processing with Python</a></li>
             </ol>
             <li><a href="#idiomas">Idiomas</a></li>
-            <ol type="a">
+            <ol type="a" class="subsection-navbar-resume">
                 <li><a href="#espanol">Español</a></li>
                 <li><a href="#ingles">Inglés</a></li>
+                <li><a href="#otros-idiomas">Otros idiomas</a></li>
             </ol>
             <li><a href="#habilidades">Habilidades</a></li>
-            <ol type="a">
+            <ol type="a" class="subsection-navbar-resume">
                 <li><a href="#programacion">Programación</a></li>
                 <li><a href="#frameworks">Frameworks</a></li>
                 <li><a href="#base-de-datos">Base de datos</a></li>
@@ -81,151 +83,264 @@
         </ol>
 
         <!-- "section" is used to define sections in a document -->
-        <section>
+        <section class="resume-section">
           <h3 id="formacion-academica">Formación académica</h3>
           <p id="educacion-primaria">
-            <strong>Educación Primaria</strong> (Desde primero hasta tercer grado) en el <strong>Colegio San Simón</strong> (2008 - 2011)<br/>
+            <strong>Educación Primaria</strong> (Desde primero hasta tercer [medio semestre] grado en el <strong>Colegio San Simón</strong> (2008 - 2011)<br/>
             Mis primeros años de educación los realicé en el Colegio San Simón, donde aprendí a leer, escribir y sumar. Fueron años muy divertidos y llenos de aprendizaje. Acontecimientos más destacables:
           </p>
-          <ul>
-            <li>Repetí el primer grado, ya que, al ser un niño que se juntaba con los niños mas pequeños (de preescolar), la psicóloga del colegio recomendó que repitiera el grado por mi bienestar emocional y académico.</li>
-            <li>En segundo grado, fui elegido como el mejor estudiante del grado.</li>
-            <li>En tercer grado, gané el primer lugar en la competencia de matemáticas del colegio.</li>
-            <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+            <li>
+                <p>Repetí el primer grado, ya que, al ser un niño que se juntaba con los niños mas pequeños (de preescolar), la psicóloga del colegio recomendó que repitiera el grado por mi bienestar emocional y académico.</p>
+            </li>
+            <li>
+                <p>En segundo grado, fui elegido como el mejor estudiante del grado.</p>
+            </li>
+            <li>
+                <p>En tercer grado, gané el primer lugar en la competencia de matemáticas de intercursos.</p>
+            </li>
+            <li>
+                <p>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</p>
+            </li>
+          </ul>
+
+          <p id="educacion-primaria-2">
+            <strong>Educación Primaria</strong> (Desde tercero[otra mitad del semestre] hasta quinto grado) en el <strong>Colegio Alfonso Jaramillo</strong> (2011 - 2013)<br/>
+            Buscando una educación más completa y de mayor calidad, mis padres decidieron cambiarme al Colegio Alfonso Jaramillo, donde pude seguir aprendiendo y creciendo como persona. Acontecimientos más destacables:
+          </p>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      En lo que restaba de tercero grado, conocí a mi mejor amigo Pedro, con quien compartí muchos momentos felices y tristes (llevamos ya casi 13 años de amistad).
+                  </p>
+              </li>
+              <li>
+                    <p>
+                        En cuarto grado, saqué la mejor nota en matemáticas del curso.
+                    </p>
+              </li>
+              <li>
+                  <p>
+                      En quinto grado, volví a sacar la mejor nota en matemáticas del curso.
+                  </p>
+              </li>
           </ul>
 
           <p id="educacion-secundaria">
-            <strong>Educación Primaria</strong> (Desde tercero hasta quinto grado) en el <strong>Colegio Alfonso Jaramillo</strong> (2011 - 2013)<br/>
-            Buscando una educación más completa y de mayor calidad, mis padres decidieron cambiarme al Colegio Alfonso Jaramillo, donde pude seguir aprendiendo y creciendo como persona. Acontecimientos más destacables:
-          </p>
-          <ul>
-              <li>En cuarto grado, fui elegido como el mejor estudiante del grado.</li>
-              <li>En quinto grado, gané el primer lugar en la competencia de matemáticas del colegio.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
-          </ul>
-
-          <p id="educacion-media">
-            <strong>Educación Secundaria</strong> (Desde quinto hasta noveno grado) en el <strong>Colegio Alfonso Jaramillo</strong> (2013 - 2017)<br/>
+            <strong>Educación Secundaria</strong> (Desde sexto hasta noveno grado) en el <strong>Colegio Alfonso Jaramillo</strong> (2013 - 2017)<br/>
             Luego, continué mi educación en el Colegio Alfonso Jaramillo, donde realicé mi primer proyecto de ingeniería. El proyecto consistió en la creación de la famosa bobina de Tesla, un dispositivo que genera electricidad de forma inalámbrica (gracias al efecto inductivo que crea el campo magnético de una alta frecuencia). Fue una experiencia muy enriquecedora y me permitió descubrir mi pasión por la tecnología. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En séptimo grado, fui elegido como el mejor estudiante del grado.</li>
-              <li>En noveno grado, gané el primer lugar en la competencia de matemáticas del colegio.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      En sexto grado, por estar siguiendo una cometa que se me había volado, me choqué con un poste de luz y me rompí la mandíbula.
+                  </p>
+              </li>
+              <li>
+                  <p>
+                      En séptimo grado, junto con la banda de música del colegio, tocamos la canción "Hot the line" de Robin Thicke en el día de la familia.
+                  </p>
+              </li>
+              <li>
+                  <p>
+                      En octavo grado, participé en el concurso de "Spelling Bee" y quedé en tercer lugar.
+                  </p>
+              </li>
+               <li>
+                   <p>
+                       En noveno grado, fui elegido como el mejor estudiante del grado.
+                   </p>
+               </li>
           </ul>
 
-          <p id="educacion-superior">
-            <strong>Educación Media</strong> (Desde noveno hasta undécimo grado) en el <strong>Colegio Divino Salvador</strong> (2017 - 2019))<br/>
+          <p id="educacion-secundaria-2">
+            <strong>Educación Media</strong> (Desde décimo hasta undécimo grado) en el <strong>Colegio Divino Salvador</strong> (2017 - 2019))<br/>
             Dado al translado del colegio Alfonso Jaramillo fuera de la ciudad, mis padres decidieron cambiarme al Colegio Divino Salvador, donde pude seguir aprendiendo y creciendo como persona. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En noveno grado, fui elegido como el mejor estudiante del grado.</li>
-              <li>En undécimo grado, gané el primer lugar en la competencia de matemáticas del colegio.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      En décimo grado, fui elegido como el tesorero del grupo estudiantil. Además, conseguí mi primera novia, la cual fue una muy bonita experiencia que me permitió crecer como persona.
+                  </p>
+              </li>
+              <li>
+                  <p>
+                        En undécimo grado, fuí elegido como el presidente del grupo estudiantil.
+                  </p>
+              </li>
           </ul>
 
           <p id="educacion-superior">
-            <strong>Educación Superior</strong> (Desde primer hasta actualmente séptimo semestre) en el <strong>Pontificia Universidad Javeriana</strong> (2021 - 2024))<br/>
-            Actualmente me encuentro cursando la carrera de Ingeniería de Sistemas y Computación en la Pontificia Universidad Javeriana, donde he aprendido a programar en varios lenguajes de programación, a diseñar y desarrollar aplicaciones web y móviles, a trabajar en equipo y a resolver problemas de forma eficiente. Estoy muy emocionado por lo que me depara el futuro y por todas las oportunidades que se me presentarán en el mundo laboral. Acontecimientos más destacables:
+            <strong>Educación Superior</strong> (Desde primer hasta actualmente séptimo semestre) en la <strong>Pontificia Universidad Javeriana</strong> (2021 - 2024))<br/>
+            Actualmente me encuentro cursando la carrera de Ingeniería de Sistemas e Ingeniería Electrónica en la Pontificia Universidad Javeriana, donde he tenido la oportunidad de aprender sobre programación, electrónica, robótica y mucho más. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En primer semestre, fui elegido como el mejor estudiante del semestre.</li>
-              <li>En cuarto semestre, gané el primer lugar en la competencia de matemáticas de la universidad.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                    <p>
+                        En primer semestre, entré a formar parte del capítulo IEEE RAS Javeriana, donde ocupo el cargo de secretario y participo activamente en proyectos y talleres.
+                    </p>
+              </li>
+              <li>
+                  <p>
+                      En cuarto semestre, decidí empezar la doble titulación en Ingeniería Electrónica, con el objetivo de cumplir mi sueño de trabajar en la NASA creando tecnología (Drones) para la exploración espacial e investigando aspectos relacionados con la física (Mi materia favorita).
+                  </p>
+              </li>
+              <li>
+                    <p>
+                        En quinto semestre, realice una parte del sueño de mi infancia, al realizar un proyecto de drones en el curso de robótica <a href="https://github.com/Nidhood/PROJECT-DRONE.git">(🤞🏻Ver repo y darle amor 🤞🏻).</a>
+                    </p>
+                </li>
           </ul>
+        </section>
 
+        <section class="resume-section">
           <h3 id="cursos-udemy" >Cursos en Udemy</h3>
           <p id="curso-1">
             <strong>The Complete Python Bootcamp From Zero to Hero in Python</strong> (2023)<br/>
             Aprende Python desde cero hasta un nivel avanzado con este curso completo de Python en Udemy. Aprenderás a programar en Python, a utilizar librerías de Python para el análisis de datos y la creación de modelos de Machine Learning, y a desarrollar aplicaciones web y móviles con Python. Puntos más destacables del curso:
           </p>
-          <ul>
-            <li>Introducción a Python y a la programación en general.</li>
-            <li>Uso de librerías de Python para el análisis de datos y la creación de modelos de Machine Learning.</li>
-            <li>Desarrollo de aplicaciones web y móviles con Python.</li>
+          <ul class="unordered-list-resume">
+            <li>
+                <p>
+                    Introducción a Python y a la programación en general.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Desarrollo de proyectos de programación en Python.
+                </p>
+            </li>
           </ul>
 
           <p id="curso-2">
             <strong>Python for Machine Learning & Data Science Masterclass</strong> (2023)<br/>
             Aprende Machine Learning y Data Science con Python con este curso avanzado de Python en Udemy. Aprenderás a utilizar librerías de Python para el análisis de datos y la creación de modelos de Machine Learning, y a desarrollar aplicaciones web y móviles con Python. Puntos más destacables del curso:
           </p>
-          <ul>
-              <li>Uso de librerías de Python para el análisis de datos y la creación de modelos de Machine Learning.</li>
-              <li>Desarrollo de aplicaciones web y móviles con Python.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      Uso de librerías de Python para el análisis de datos y la creación de modelos de Machine Learning.
+                  </p>
+              </li>
+              <li>
+                  <p>
+                      Desarrollo de un pequeño proyecto de Machine Learning con, utilizando un algoritmo genético para resolver el problema del viajero.
+                  </p>
+              </li>
           </ul>
 
           <p id="curso-3">
             <strong>NLP - Natural Language Processing with Python</strong> (2023)<br/>
             Aprende Procesamiento de Lenguaje Natural (NLP) con Python con este curso avanzado de Python en Udemy. Aprenderás a utilizar librerías de Python para el análisis de texto y la creación de modelos de NLP, y a desarrollar aplicaciones web y móviles con Python. Puntos más destacables del curso:
           </p>
-          <ul>
-              <li>Uso de librerías de Python para el análisis de texto y la creación de modelos de NLP.</li>
-              <li>Desarrollo de aplicaciones web y móviles con Python.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      Uso de librerías de Python para el análisis de texto y la creación de modelos de NLP.
+                  </p>
+              </li>
+              <li>
+                  <p>
+                      Desarrolle un pequeño proyecto de NLP con, utilizando un modelo de lenguaje para generar texto y creando una aplicación web para interactuar con el modelo.
+                  </p>
+              </li>
           </ul>
+        </section>
 
+        <section class="resume-section">
           <h3 id="idiomas">Idiomas</h3>
           <p id="espanol">
             <strong>Español:</strong> Nativo<br/>
             Mi lengua materna es el español, por lo que tengo un dominio nativo del idioma. Puedo hablar, leer y escribir en español con fluidez y precisión. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En el colegio, fui elegido como el mejor estudiante de español del grado.</li>
-              <li>En la universidad, gané el primer lugar en la competencia de ortografía de la universidad.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      Me encanta leer libros de ciencia ficción y policíacos (fan de Agatha Christie) en español.
+                  </p>
+              </li>
           </ul>
 
           <p id="ingles">
             <strong>Inglés:</strong> Intermedio-Alto (B2)<br/>
-            Mi segundo idioma es el inglés, por lo que tengo un dominio intermedio-alto del idioma. Puedo hablar, leer y escribir en inglés con fluidez y precisión. Acontecimientos más destacables:
+            Mi segundo idioma es el inglés, por lo que tengo un dominio intermedio-alto (B2) del idioma. Puedo hablar, leer y escribir en inglés con fluidez y precisión. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En el colegio, fui elegido como el mejor estudiante de inglés del grado.</li>
-              <li>En la universidad, gané el primer lugar en la competencia de inglés de la universidad.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      Me encanta ver series y películas en inglés, ya que me permite mejorar mi comprensión auditiva y mi vocabulario.
+                  </p>
+            </li>
           </ul>
+          <p id="otros-idiomas">
+            <strong>Idiomás que me gustaría aprender:</strong> Francés y Chino.<br/>
+            Me gustaría aprender francés y chino en el futuro, ya que son idiomas muy interesantes y útiles para mi carrera profesional, además que me gustaría vivir en Singapur o Francia en un futuro. Acontecimientos más destacables:
+          </p>
+            <ul class="unordered-list-resume">
+                <li>
+                    <p>
+                        Me encanta la cultura francesa y china, por lo que me gustaría aprender sus idiomas para poder comunicarme con las personas de esos países.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Quiero vivir alguna vez en Singapur, me parece un país con una economía muy fuerte y con  los mejores avanzes tecnológicos.
+                    </p>
+                </li>
+            </ul>
+        </section>
 
+        <section class="resume-section">
           <h3 id="habilidades">Habilidades</h3>
           <p id="programacion">
             <strong>Programación:</strong> HTML, CSS, JavaScript, TypeScript, Java, Python, C++, C, Kotlin, Docker.<br/>
             Tengo experiencia en programación en varios lenguajes de programación, como HTML, CSS, JavaScript, TypeScript, Java, Python, C++, C, Kotlin y Docker. He desarrollado aplicaciones web, móviles y de escritorio en estos lenguajes de programación. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En la universidad, fui elegido como el mejor estudiante de programación de la universidad.</li>
-              <li>En la universidad, gané el primer lugar en la competencia de programación de la universidad.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      He realizado varios proyectos de programación en la universidad.
+                  </p>
+              </li>
+
           </ul>
 
           <p id="frameworks">
             <strong>Frameworks:</strong> Angular, React, Node.js, Spring Boot, Android, ROS.<br/>
             Tengo experiencia en el desarrollo de aplicaciones web y móviles con Angular, React, Node.js, Spring Boot, Android y ROS. He desarrollado aplicaciones web y móviles con estos frameworks. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En la universidad, fui elegido como el mejor estudiante de frameworks de la universidad.</li>
-              <li>En la universidad, gané el primer lugar en la competencia de frameworks de la universidad.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                  <p>
+                      He desarrollado una aplicación web con Angular y Spring Boot en la universidad.
+                  </p>
+              </li>
           </ul>
 
           <p id="base-de-datos">
             <strong>Base de datos:</strong> MySQL, Oracle, MongoDB, CockroachDB.<br/>
             Tengo experiencia en el diseño y desarrollo de bases de datos con MySQL, Oracle, MongoDB y CockroachDB. He diseñado y desarrollado bases de datos para aplicaciones web y móviles. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En la universidad, fui elegido como el mejor estudiante de bases de datos de la universidad.</li>
-              <li>En la universidad, gané el primer lugar en la competencia de bases de datos de la universidad.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                    <p>
+                        He diseñado y desarrollado una base de datos distribuida con CockroachDB en la universidad.
+                    </p>
+              </li>
           </ul>
 
           <p id="control-de-versiones">
             <strong>Control de versiones:</strong> Git, GitHub, GitLab.<br/>
             Tengo experiencia en el control de versiones con Git, GitHub y GitLab. He utilizado Git, GitHub y GitLab para gestionar el código fuente de mis proyectos y colaborar con otros desarrolladores. Acontecimientos más destacables:
           </p>
-          <ul>
-              <li>En la universidad, fui elegido como el mejor estudiante de control de versiones de la universidad.</li>
-              <li>En la universidad, gané el primer lugar en la competencia de control de versiones de la universidad.</li>
-              <li>Destacaba por ser un niño muy tímido y callado, pero muy inteligente y aplicado en sus estudios.</li>
+          <ul class="unordered-list-resume">
+              <li>
+                    <p>
+                        He colaborado en varios proyectos de programación en la universidad utilizando Git y GitHub.
+                    </p>
+              </li>
           </ul>
         </section>
       </article>
-    </main>
   </body>
 </html>

@@ -1,7 +1,19 @@
+
+/* Josefin Sans Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Gothic+Coding&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Playwrite België Walloon Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Gothic+Coding&family=Playwrite+BE+WAL:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Staatliches Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Gothic+Coding&family=Permanent+Marker&family=Playwrite+BE+WAL:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Staatliches&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Rubik Distressed Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Londrina+Shadow&family=Nanum+Gothic+Coding&family=Permanent+Marker&family=Playwrite+BE+WAL:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Distressed&family=Staatliches&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     background-color: #4a4a4a;
     color: #fff;
-    font-family: Arial, sans-serif;
     margin: 0;
 }
 
@@ -11,28 +23,80 @@ body {
     margin-top: 60px;
 }
 
+/* Bienvenida */
+.article-welcome {
+    padding: 60px 100px 60px 100px;
+}
+
+.container {
+    text-align: justify;
+    font-size: 12pt;
+}
+
+.main-photo {
+    margin: auto 15px 11px 0;
+    width: auto;
+    float: left;
+    border: 5px solid black;
+    box-shadow: 2px 2px 5px 5px #ccffcc;
+}
+
+/* Material de interés */
+.article-interest {
+    padding: 60px 100px 60px 100px;
+}
+
+/* Datos biográficos */
+.article-bio {
+    padding: 60px 100px 60px 100px;
+}
+
 /* Panel de navegación */
 
 .navbar {
     position: fixed;
     width: 100%;
     background-color: #4a4a4a;
+    margin-top: 0;
     top: 0;
+    list-style: none;
+    padding: 0;
+
 }
 
 .navbar-link {
     display: block;
-    padding: 14px 20px;
+    padding: 14px 0 14px 0;
     color: white;
     text-decoration: none;
+    float: left;
+    text-align: center;
+    width: 25%;
+    font-family: 'Playwrite BE WAL', sans-serif;
 }
 
 .navbar-link:hover {
     background-color: #575757;
+    color: #ccffcc;
 }
 
 .separator {
-    margin: 200px;
+    margin: 50px;
+}
+
+.article-resume {
+    padding: 60px 100px 60px 100px;
+}
+
+.resume-section {
+    margin: 100px 100px 100px 100px;
+    padding: 14px 100px 14px 14px;
+    border: 5px solid white;
+    background: linear-gradient(45deg, #3101FF, #FF4500);
+}
+
+.navbar-resume li {
+    color: aliceblue;
 }
 
 /* Tablas */
@@ -64,7 +128,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #ccffcc;
+    background-color: yellowgreen;
     color: #000;
 }
 
@@ -74,11 +138,75 @@ td a {
 }
 
 td a:hover {
+    color: darkblue;
     text-decoration: underline;
 }
 
-/* Títulos */
-h1, h2, h3, h4, h5, h6 {
-    color: #00FFFF;
+/* Barra de navegación hoja de vida */
+
+.navbar-resume li{
+    color: white;
+    padding-bottom: 8px;
+}
+
+.subsection-navbar-resume li{
+    color: red;
+}
+
+.subsection-navbar-resume a{
+    color: aquamarine;
+}
+
+.subsection-navbar-resume a:hover{
+    color: azure;
     text-decoration: underline;
+}
+
+.unordered-list-resume li{
+    color: cyan;
+    list-style: disc;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.unordered-list-resume p{
+    color: yellowgreen;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+/* Títulos */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ccffcc;
+    text-decoration: underline;
+    text-decoration-color: #00FFFF;
+    font-family: "Staatliches", sans-serif;
+    font-size: 2em;
+}
+
+/* Parráfos */
+
+p {
+    font-family: 'josefin sans', sans-serif;
+}
+
+/* Enlaces */
+
+a {
+    font-family: "Londrina Shadow", sans-serif;
+    color: yellow;
+    font-style: italic;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Listas */
+li {
+    font-family: 'Ubuntu Mono', monospace;
 }

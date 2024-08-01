@@ -1,17 +1,29 @@
 'use strict'
 
-// Experiencia laboral, de estudios, premios, producción intelectual Al seleccionar una sección en el índice, el navegador debe deslizarse suavemente hacia dicha sección
-// en resume,  al  cliquear el indice (lista de referencias que van al id) se desplaza suavemente hacia la sección correspondiente
+document.addEventListener('DOMContentLoaded', function() {
 
-// <li><a href="#formacion-academica" class="navbar-resume-link">Formación académica</a></li>
-document.querySelectorAll('.navbar-resume-link').forEach((link) => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
+    // Seleccionar todos los enlaces dentro de la lista de navegación
+    const links = document.querySelectorAll('.navbar-resume a');
 
-        const target = event.target.getAttribute('href'); // '#formacion-academica'
-        const targetElement = document.querySelector(target); // <section id="formacion-academica">...</section>
-        targetElement.scrollIntoView({
-            behavior: 'smooth'
+    // Agregar un event listener a cada enlace
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+
+            // Prevenir el comportamiento por defecto del enlace
+            e.preventDefault();
+
+            // Obtener el id del elemento al que apunta el enlace
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            // Si el elemento existe, realizar el desplazamiento suave
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
+

@@ -51,6 +51,57 @@ body {
     padding: 60px 100px 60px 100px;
 }
 
+/* Chat */
+
+.chat-description {
+    padding: 60px 100px 20px 100px;
+}
+
+.chat-section {
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.chat-section .messages {
+    flex: 1;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-section .input-group {
+    margin-bottom: 10px;
+}
+
+.chat-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.chat-section input, .chat-section textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.chat-section .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.chat-section .message {
+    margin-bottom: 10px;
+}
+
 /* Panel de navegación */
 
 .navbar {
@@ -71,7 +122,7 @@ body {
     text-decoration: none;
     float: left;
     text-align: center;
-    width: 25%;
+    width: 20%;
     font-family: 'Playwrite BE WAL', sans-serif;
 }
 
@@ -208,6 +259,7 @@ a:hover {
 }
 
 /* Listas */
+
 li {
     font-family: 'Ubuntu Mono', monospace;
 }

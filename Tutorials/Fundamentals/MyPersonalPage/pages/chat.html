@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="application-name" content="My Personal Page" />
+    <meta name="author" content="Ivan Orozco" />
+    <meta name="description" content="Sitio web personal de Ivan Orozco" />
+    <meta name="keywords" content="Ivan Orozco, Desarrollador Web, Programador" />
+
+    <!-- No guardar en el navegador -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+    <!-- Permitir indexar la página -->
+    <meta name="robots" content="index">
+
+    <!-- Permitir abrir los enlaces de una página -->
+    <meta name="robots" content="follow">
+
+    <title>Ivan Orozco</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/script.js"></script>
+    <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon"/>
+</head>
+<body>
+<main>
+    <div class="main-content">
+        <ul class="navbar">
+            <li>
+                <a href="./welcome.html" class="navbar-link">Bienvenida</a>
+            </li>
+
+            <li>
+                <a href="./biographical-data.html" class="navbar-link">Datos biográficos</a>
+            </li>
+
+            <li>
+                <a href="./resume.html" class="navbar-link">Hoja de vida</a>
+            </li>
+
+            <li>
+                <a href="./interest-material.html" class="navbar-link">Material de interés</a>
+            </li>
+
+            <li>
+                <a href="./chat.html" class="navbar-link">Chat</a>
+            </li>
+        </ul>
+    </div>
+</main>
+
+<section class="chat-description">
+    <h1>Chat</h1>
+    <p>Aca podrás jugar un poco con el chat, puedes armar una conversación contigo mismo o crear tus propios personajes ¡Incluso podrías armar tu propia historia! ¡Diviértete!</p>
+</section>
+
+<section class="chat-section">
+    <div class="messages" id="messages"></div>
+    <div class="input-group">
+        <label for="sender">Nombre del Remitente:</label>
+        <input type="text" id="sender">
+        <div class="error" id="sender-error"></div>
+    </div>
+
+    <div class="input-group">
+        <label for="message">Texto del Mensaje:</label>
+        <textarea id="message"></textarea>
+        <div class="error" id="message-error"></div>
+    </div>
+    <button onclick="sendMessage()">Enviar Mensaje</button>
+</section>
+</body>
+</html>

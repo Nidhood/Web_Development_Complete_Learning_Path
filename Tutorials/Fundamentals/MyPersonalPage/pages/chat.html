@@ -7,8 +7,8 @@
     <meta name="description" content="Sitio web personal de Ivan Orozco" />
     <meta name="keywords" content="Ivan Orozco, Desarrollador Web, Programador" />
 
-    <!-- No guardar en el navegador -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <!-- No guardar Cache en el navegador -->
+    <meta http-equiv="content-type" content="no-cache, no-store, must-revalidate">
 
     <!-- Permitir indexar la página -->
     <meta name="robots" content="index">
@@ -16,7 +16,7 @@
     <!-- Permitir abrir los enlaces de una página -->
     <meta name="robots" content="follow">
 
-    <title>Ivan Orozco</title>
+    <title>Chat</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/script.js"></script>
     <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon"/>
@@ -63,7 +63,7 @@
 
     <div class="input-group">
         <label for="message">Texto del Mensaje:</label>
-        <textarea id="message"></textarea>
+        <input id="message"/>
         <div class="error" id="message-error"></div>
     </div>
     <button onclick="sendMessage()">Enviar Mensaje</button>

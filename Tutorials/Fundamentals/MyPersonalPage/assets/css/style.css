@@ -23,6 +23,17 @@ body {
     margin-top: 60px;
 }
 
+/* Index */
+.index-section {
+    padding: 60px 100px 60px 100px;
+}
+
+.index-section p {
+    font-family: "Rubik Distressed", sans-serif;
+    font-size: 40pt;
+    margin-top: 80px;
+}
+
 /* Bienvenida */
 .article-welcome {
     padding: 60px 100px 60px 100px;
@@ -55,6 +66,7 @@ body {
 
 .chat-description {
     padding: 60px 100px 20px 100px;
+    font-family: "Comic Sans MS", cursive;
 }
 
 .chat-section {
@@ -65,40 +77,42 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    height: 400px;
-    box-sizing: border-box;
+    height: 450px;
+    font-family: "Comic Sans MS", cursive;
 }
 
-.chat-section .messages {
+.messages {
     flex: 1;
     border: 1px solid #ccc;
     margin-bottom: 10px;
     padding: 10px;
-    overflow-y: auto;
+    overflow-y: auto; /* Hace que el contenedor sea scrollable */
+    font-family: "Comic Sans MS", cursive;
 }
 
-.chat-section .input-group {
+.input-group {
     margin-bottom: 10px;
 }
 
 .chat-section label {
-    display: block;
     margin-bottom: 5px;
 }
 
 .chat-section input, .chat-section textarea {
     width: 100%;
     padding: 5px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Hace que el padding no afecte el tamaño del input */
+    font-family: "Comic Sans MS", cursive;
 }
 
-.chat-section .error {
+.error {
     color: red;
     font-size: 12px;
     margin-top: 5px;
+    font-family: "Comic Sans MS", cursive;
 }
 
-.chat-section .message {
+.message {
     margin-bottom: 10px;
 }
 
@@ -129,6 +143,8 @@ body {
 .navbar-link:hover {
     background-color: #575757;
     color: #ccffcc;
+    border: 1px solid #ccffcc;
+    width: 19.86%;
 }
 
 .separator {
@@ -164,13 +180,13 @@ th {
     font-weight: bold;
     padding: 10px;
     border: 1px solid #000;
-
+    font-family: "Rowdies", sans-serif;
 }
 
 td {
     padding: 10px;
     border: 1px solid #000;
-
+    font-family:'Nanum Gothic Coding', monospace;
 }
 
 tbody tr:nth-child(even) {
@@ -256,10 +272,30 @@ a {
 a:hover {
     color: #ffcc00;
     text-decoration: underline;
+    background-color: #575757;
+    border: 1px solid #ccffcc;
 }
 
 /* Listas */
 
 li {
     font-family: 'Ubuntu Mono', monospace;
+}
+
+/* Botones */
+button {
+    background-color: #ccffcc;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2em;
+}
+
+button:hover {
+    opacity: 0.8;
+    border: 2px solid black;
 }
